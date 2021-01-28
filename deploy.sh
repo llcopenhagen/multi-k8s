@@ -10,4 +10,4 @@ docker push kingofcph/multi-worker:$SHA
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=kingofcph/multi-server:$SHA
 kubectl set image deployments/client-deployment client=kingofcph/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=kingofph/multi-worker:$SHA
+kubectl set image deployments/worker-deployment worker=kingofcph/multi-worker:$SHA
